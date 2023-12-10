@@ -1,0 +1,85 @@
+*{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+body{
+    background-color: #427D9D;
+}
+#heading{
+    margin-top: 30px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size:60px;
+    margin-top: 0;
+}
+#form-div{
+    background-color: #164863;
+    display: grid;
+    height: 60vh;
+    aspect-ratio: 1;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    place-content: center;
+}
+
+.input-div{
+    position: relative;
+}
+.input-div input{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #427D9D;
+    padding: 0.625rem;
+    border: 2px solid #ffffff;
+}
+.input-div label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color:#ffffff;
+    background-color: transparent;
+    padding-inline: 0.25rem;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms,
+                background-color 250ms,
+                border-color 250ms;
+}
+
+
+.input-div:focus-within label,
+.input-div:not(:has(:placeholder-shown))
+label{
+    background-color: #427D9D;
+    translate: 0.625rem -1rem;
+    border-color: #ffffff;
+}
+.input-div ::placeholder{
+    color: transparent;
+}
+
+
+
+button {
+    /* border-radius: 10px; */
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid white;
+    background: #164863;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background: #427D9D;
+    text-decoration: none;
+  }
